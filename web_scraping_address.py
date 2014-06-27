@@ -17,6 +17,7 @@ for state in state_abbrevs:
 
 #We'll start with the Representatives. In the file is a list of all the districs in the country. Using a for loop the web address gets maniplated to include each district.
 #The for loop uses beatiful soup to access the address
+#There is a second for loop since each representative has a different number of district offices. In order to ensure we get all the offices, we used this second for loop.
 #Then we write the info into a CSV file, but since the Address does not have a comma between the State and Zip5, we have to add it in
 # We repeat the same thing for the senators, but instead we use the new_state_abbrevs list
 with open("all_districts_info.txt", "w") as district_file_updated:
